@@ -17,7 +17,21 @@
       <div class="form-group">
         <label for="monthlyConsumption">Consumo Mensual (kWh):</label>
         <input type="number" id="monthlyConsumption" name="monthlyConsumption" placeholder="Ej. 667">
-      </div>      
+      </div>     
+      <div class="form-group">
+        <label>Selecciona la potencia del panel:</label>
+        <div class="radio-group">
+            <input type="radio" id="power320" name="panelPower" value="320">
+            <label for="power320">320W</label>
+    
+            <input type="radio" id="power400" name="panelPower" value="400" checked>
+            <label for="power400">400W</label>
+    
+            <input type="radio" id="power500" name="panelPower" value="500">
+            <label for="power500">500W</label>
+        </div>
+    </div>
+    
       <button type="submit">Calcular</button>
     </form>
     <div id="result">Paneles necesarios: <span id="panelsNeeded"></span></div>

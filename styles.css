@@ -5,17 +5,21 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding: 100px;
+    padding: 80px;
+}
+h1{
+  font-size: 20px;
+
 }
 
 .container {
   background-color: #f3eeeea2;
-  padding: 40px;
-  width: 300px;
+  padding: 30px;
+  width: 320px;
   margin: auto;
   border-radius: 8px;
   box-shadow: 15px 15px 5px rgba(0,0,0,0.1);
-  margin-top: 40px;
+  margin-top: 55px;
   border: 2px solid rgba(0,0,0,0.1);
 }
 
@@ -78,6 +82,21 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.47);
 }
+.radio-group {
+  display: flex; /* Habilita Flexbox */
+  justify-content: space-between; /* Distribuye el espacio uniformemente */
+  align-items: center; /* Alinea los elementos verticalmente */
+  margin-top: 10px; /* Espacio adicional si es necesario */
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px; /* Espacio a la derecha del botón radio */
+}
+
+.radio-group label {
+  margin-right: 20px; /* Espacio a la derecha de la etiqueta, ajusta según necesidades */
+}
+
 
 header {
   position: fixed;
@@ -85,13 +104,61 @@ header {
   left: 0;
   right: 0; 
   width: 100%;
-  padding: 5px 0;
   border-bottom: 10px solid #2c3e50;
   background-color: transparent;
   color: white;
   text-align: center;
 }
+/* Estilos para el label del formulario */
+label {
+  font-family: 'Roboto', sans-serif; /* Asegúrate de que el tipo de letra sea consistente */
+  font-size: 14px; /* Tamaño de fuente más grande para mejor legibilidad */
+  color: #333; /* Un color oscuro para buena legibilidad */
+  display: block; /* Asegura que el label tenga su propia línea */
+}
+/* Estilos específicos para el label 'Consumo Mensual' */
+label[for="monthlyConsumption"] {
+  font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto para coherencia con el diseño */
+  font-size: 16px; /* Tamaño de fuente adecuado para formularios */
+  font-weight: 500; /* Hacer el texto un poco más grueso para destacar */
+  display: block; /* Hace que el label ocupe su propia línea */
+  margin-bottom: 8px; /* Espacio debajo del label antes del input */
+}
+
 
 h3{
   color: #333;
+}
+@media (max-width: 768px) {
+  body {
+      padding-top: 60px; /* Añade espacio en la parte superior para el header */
+      padding-bottom: 60px; /* Añade espacio en la parte inferior para el footer */
+      padding-left: 10px; /* Añade un poco de espacio a los lados para no pegar el contenido a los bordes */
+      padding-right: 10px;
+  }
+
+  .container {
+      width: 100%; /* Utiliza todo el ancho disponible para que el contenedor se vea más grande en dispositivos móviles */
+      padding: 20px; /* Ajusta el padding para que no sea demasiado abultado */
+      margin-top: 10px; /* Reduce el margen superior para acercar el contenedor al header */
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Sombra más sutil para no distraer */
+  }
+
+  header, footer {
+      padding: 10px 0; /* Ajusta el padding para que no ocupe demasiado espacio */
+      border-bottom: 5px solid #2c3e50; /* Mantén un borde visible pero no demasiado grueso */
+  }
+
+  input[type="number"], button {
+      padding: 12px; /* Asegura que los botones e inputs sean fáciles de tocar */
+  }
+
+  #result {
+      font-size: 16px; /* Mantén una fuente legible */
+      padding: 10px; /* Buen padding para visibilidad */
+  }
+
+  .logo {
+      max-width: 80%; /* Reduce un poco más si es necesario para evitar que el logo se vea demasiado grande */
+  }
 }
