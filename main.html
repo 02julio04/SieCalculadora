@@ -10,25 +10,23 @@
   <h3>Calculo para saber cantidad de paneles solares a usar de acuerdo con el consumo mensual</h3>
  </header>
 <body>
-<div class="container">
-  <img src="https://sie.gob.do/wp-content/uploads/2021/02/logo_sie_power-768x211.png" alt="Logotipo" class="logo">
-  <h1>Calculadora</h1>
-  <form id="calculator-form">
-    <div class="form-group">
-      <label for="initialData">Data Inicial:</label>
-      <input type="number" id="initialData" name="initialData" placeholder="Ingresa datos...">
-    </div>
-    <!-- más campos si es necesario -->
-    <button type="submit">Calcular</button>
-  </form>
-  <div id="result">Resultado: <span id="output"></span></div>
-
-</div>
+  <div class="container">
+    <img src="https://sie.gob.do/wp-content/uploads/2021/02/logo_sie_power-768x211.png" alt="Logotipo" class="logo">
+    <h1>Calculadora de Paneles Solares</h1>
+    <form id="solar-panel-form">
+      <div class="form-group">
+        <label for="monthlyConsumption">Consumo Mensual (kWh):</label>
+        <input type="number" id="monthlyConsumption" name="monthlyConsumption" placeholder="Ej. 667">
+      </div>      
+      <button type="submit">Calcular</button>
+    </form>
+    <div id="result">Paneles necesarios: <span id="panelsNeeded"></span></div>
+  </div>
+  
 <script src="script.js"></script>
 <footer>
     <div class="footer-container">
       <p>SUPERINTENDENCIA DE ELECTRICIDAD (SIE)</p>
-      <p>© 2024 Todos los Derechos Reservados</p>
     </div>
   </footer>
   
