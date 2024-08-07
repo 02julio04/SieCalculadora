@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding: 80px;
+    padding: 100px;
 }
 
   .container {
@@ -15,7 +15,7 @@ body {
     padding: 20px;
     width: 300px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
 
   }
   
