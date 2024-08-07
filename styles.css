@@ -104,10 +104,8 @@ header {
   background-color: transparent;
   color: white;
   text-align: center;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 h3{
-
   color: #333;
 }
